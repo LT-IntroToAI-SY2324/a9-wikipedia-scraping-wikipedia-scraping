@@ -64,6 +64,13 @@ def get_birth_date(name: str) -> str:
 
 
 if __name__ == "__main__":
+
+    print("\n<<<<<<<<<<<<<< Testing Planet Surface Area >>>>>>>>>>>>>>")
+    print(f'Mars has a polar radius of {get_planet_mean_density("Mars")}g/cm^3 ||| Should be: 3.9335g/cm^3')
+    print(f'Earth has a polar radius of {get_planet_mean_density("Earth")}g/cm^3 ||| Should be: 5513g/cm^3')
+    print(f'Jupiter has a polar radius of {get_planet_mean_density("Jupiter")}g/cm^3 ||| Should be: 1.326g/cm^3')
+    print(f'Saturn has a polar radius of {get_planet_mean_density("Saturn")}g/cm^3 ||| Should be: 0.687g/cm^3')
+
     print("\n<<<<<<<<<<<<<< Testing Planet Radius >>>>>>>>>>>>>>")
     # should be 3,376.2
     print(f'Mars has a polar radius of {get_planet_radius("Mars")}km')
@@ -82,15 +89,15 @@ if __name__ == "__main__":
     # assert get_planet_radius("Saturn") == "54,364", "Incorrect radius for Saturn"
     # print('\n<<<< Planet radius tests passed >>>>')
 
-    print("\n<<<<<<<<<<<<<< Testing Birth Dates >>>>>>>>>>>>>>")
-    # should be 1906-12-09
-    print(format_birth(get_birth_date("Grace Hopper"), "Grace Hopper"))
-    # should be 1912-06-23
-    print(format_birth(get_birth_date("Alan Turing"), "Alan Turing"))
-    # should be 1955-06-08
-    print(format_birth(get_birth_date("Tim Berners-Lee"), "Tim Berners-Lee"))
-    # should be 1949-01-17
-    print(format_birth(get_birth_date("Anita Borg"), "Anita Borg"))
+    # print("\n<<<<<<<<<<<<<< Testing Birth Dates >>>>>>>>>>>>>>")
+    # # should be 1906-12-09
+    # print(format_birth(get_birth_date("Grace Hopper"), "Grace Hopper"))
+    # # should be 1912-06-23
+    # print(format_birth(get_birth_date("Alan Turing"), "Alan Turing"))
+    # # should be 1955-06-08
+    # print(format_birth(get_birth_date("Tim Berners-Lee"), "Tim Berners-Lee"))
+    # # should be 1949-01-17
+    # print(format_birth(get_birth_date("Anita Borg"), "Anita Borg"))
 
     # uncomment below lines for tests once you think you're getting the right output
     # print('\n<<<< Running asserts, this might take a sec >>>>')
